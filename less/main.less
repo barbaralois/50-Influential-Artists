@@ -15,6 +15,10 @@
       width: 100%;
     }
 
+    @media @tablet {
+      height: 50vh;
+    }
+
     &:hover {
       opacity: 80%;
     }
@@ -38,7 +42,7 @@
   .flexing(row, center, flex-start);
 
   @media @tablet {
-    background-color: blue;
+    flex-direction: column;
   }
 
   .artist {
@@ -46,11 +50,24 @@
     padding: 3% 0;
     .flexing(column, center, center);
 
+    @media @tablet {
+      width: 100%;
+    }
+
     img {
       max-width: 65%;
       border-radius: 5px;
       height: 200px;
       overflow: hidden;
+
+      @media @tablet {
+        max-width: 80%;
+        height: 400px;
+      }
+
+      @media @mobile {
+        height: 250px;
+      }
     }
 
     a {
@@ -64,7 +81,12 @@
 
     .bio {
       width: 95%;
-      font-size: 0.7rem;
+      font-size: 0.9rem;
+
+      @media @tablet {
+        width: 85%;
+        font-size: 1rem;
+      }
     }
   }
 }

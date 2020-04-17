@@ -135,6 +135,16 @@ nav {
   align-items: center;
   flex-direction: row;
 }
+@media (max-width: 800px) {
+  nav {
+    min-width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    min-width: 50%;
+  }
+}
 nav h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
@@ -174,6 +184,11 @@ nav #home {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .title-container .header-photo {
+    height: 50vh;
+  }
+}
 .title-container .header-photo:hover {
   opacity: 80%;
 }
@@ -202,7 +217,7 @@ nav #home {
 }
 @media (max-width: 800px) {
   .artists-container {
-    background-color: blue;
+    flex-direction: column;
   }
 }
 .artists-container .artist {
@@ -213,11 +228,27 @@ nav #home {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 800px) {
+  .artists-container .artist {
+    width: 100%;
+  }
+}
 .artists-container .artist img {
   max-width: 65%;
   border-radius: 5px;
   height: 200px;
   overflow: hidden;
+}
+@media (max-width: 800px) {
+  .artists-container .artist img {
+    max-width: 80%;
+    height: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .artists-container .artist img {
+    height: 250px;
+  }
 }
 .artists-container .artist a {
   text-decoration: none;
@@ -229,5 +260,11 @@ nav #home {
 }
 .artists-container .artist .bio {
   width: 95%;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+}
+@media (max-width: 800px) {
+  .artists-container .artist .bio {
+    width: 85%;
+    font-size: 1rem;
+  }
 }
