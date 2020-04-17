@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html {
+  .flexing(row);
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  .flexing();
+}
+
+body {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  width: 900px;
+  .flexing(column);
+  padding: 3% 0;
+  font-family: @body-font;
+  line-height: 1.3;
+
+  @media @tablet {
+    width: 100%;
+  }
+}
+
+img:hover {
+  opacity: 80%;
+}
