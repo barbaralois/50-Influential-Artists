@@ -1,0 +1,16 @@
+.flexing(@direction:row, @justify:center, @align:center) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-direction: @direction;
+}
+
+.newButton(@color, @font:@heading-font) {
+  background-color: @color;
+  font-family: @heading-font;
+  padding: 1% 3%;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  margin-top: 1%;
+  box-shadow: 2px 2px 3px dimgray;
+}
